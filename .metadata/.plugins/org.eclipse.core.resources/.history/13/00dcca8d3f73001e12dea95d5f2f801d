@@ -1,0 +1,9 @@
+package ejercicios;
+
+public class PersonalDelServicio {
+
+	public PersonalDelServicio() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

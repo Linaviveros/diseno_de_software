@@ -1,0 +1,9 @@
+package ejercicios;
+
+public class PruebaFacultad {
+
+	public PruebaFacultad() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

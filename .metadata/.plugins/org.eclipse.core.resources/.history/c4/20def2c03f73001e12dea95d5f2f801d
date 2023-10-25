@@ -1,0 +1,33 @@
+package ejercicios;
+
+	public class Empleado1 extends Persona {
+	    
+		   
+		private int anoIncorporacion;
+		    private String numeroDespacho;
+
+		    public Empleado1(String nombre, String apellidos, String numeroIdentificacion, String estadoCivil,
+		                    int anoIncorporacion, String numeroDespacho) {
+		        super(nombre, apellidos, numeroIdentificacion, estadoCivil);
+		        
+		       
+		this.anoIncorporacion = anoIncorporacion;
+		        this.numeroDespacho = numeroDespacho;
+		    }
+
+		    
+		   
+		public void Empleado(String nombre, String apellidos, String numeroIdentificacion, String estadoCivil,
+					int anoIncorporacion2, String numeroDespacho2) {
+				// TODO Auto-generated constructor stub
+			}
+
+
+
+		public void reasignarDespacho(String nuevoDespacho) {
+		        this.numeroDespacho = nuevoDespacho;
+		    }
+		}
+	
+
+		   

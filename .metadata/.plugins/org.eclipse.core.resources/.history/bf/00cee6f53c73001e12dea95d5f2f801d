@@ -1,0 +1,9 @@
+package ejercicios;
+
+public class UltimoEjercicio {
+
+	public UltimoEjercicio() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,50 @@
+// Clase principal del pedido
+class Pedido {
+    private String producto;
+    private int cantidad;
+    private String cliente;
+    
+    private Pedido(Builder builder) {
+        this.producto = builder.producto;
+        this.cantidad = builder.cantidad;
+        this.cliente = builder.cliente;
+    }
+    
+    // Métodos getters para los campos
+    
+    @Override
+    public String toString() {
+        return "Pedido: " + cantidad + "x " + producto + " para " + cliente;
+    }
+    
+    // Clase Builder para construir el Pedido
+    static class Builder {
+        private String producto;
+        private int cantidad;
+        private String cliente;
+        
+        public Builder(String producto, int cantidad) {
+            this.producto = producto;
+            this.cantidad = cantidad;
+        }
+        
+        public Builder cliente(String cliente) {
+            this.cliente = cliente;
+            return this;
+        }
+        
+        public Pedido build() {
+            return new Pedido(this);
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Pedido pedido = new Pedido.Builder("Camisetas", 10)
+                            .cliente("Juan Pérez")
+                            .build();
+        
+        System.out.println(pedido);
+    }
+}
